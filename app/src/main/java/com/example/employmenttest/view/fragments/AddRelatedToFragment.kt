@@ -29,7 +29,7 @@ class AddRelatedToFragment : Fragment() {
         _binding = FragmentAddRelatedToBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(requireActivity())[CreateChannelViewModel::class.java]
 
-        val adapter = ListAdapter(requireContext(), viewModel.channelModel)
+        val adapter = ListAdapter(requireContext(), viewModel.channelViewModel.getAll())
 
         binding.apply {
             createYourOwn.setOnClickListener {

@@ -13,6 +13,10 @@ class ChannelViewModel(context: Context) : ViewModel() {
     private val tag = "QuizViewModelTag"
     private var channelRepo: ChannelRepo = ChannelRepo(context)
 
+    init {
+        getAll()
+    }
+
     fun getAll(): MutableList<ChannelModel> = runBlocking {
         channelRepo.getAll()
     }

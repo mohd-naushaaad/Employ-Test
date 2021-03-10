@@ -9,5 +9,4 @@ import com.example.employmenttest.database.ChannelViewModel
 class CreateChannelViewModel(application: Application) : AndroidViewModel(application) {
 
     val channelViewModel: ChannelViewModel = ChannelViewModel(application)
-    var channelModel: MutableList<ChannelModel> = channelViewModel.getAll()
 }
