@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.employmenttest.adapters.ListAdapter
 import com.example.employmenttest.databinding.FragmentAddRelatedToBinding
 import com.example.employmenttest.viewmodel.CreateChannelViewModel
 
@@ -28,6 +29,8 @@ class AddRelatedToFragment : Fragment() {
         _binding = FragmentAddRelatedToBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(requireActivity())[CreateChannelViewModel::class.java]
 
+        val adapter = ListAdapter(requireContext(), viewModel.channelModel)
+
         binding.apply {
             createYourOwn.setOnClickListener {
                 val action =
@@ -35,12 +38,11 @@ class AddRelatedToFragment : Fragment() {
                 navController.navigate(action)
             }
 
-
-            searchedList.adapter = viewModel.adapter
+            searchedList.adapter = adapter
 
             search.setOnClickListener {
                 if (binding.searchEditText.text.isNotEmpty()) {
-                    viewModel.adapter.filter.filter(binding.searchEditText.text.toString())
+                    adapter.filter.filter(binding.searchEditText.text.toString())
                 }
             }
         }

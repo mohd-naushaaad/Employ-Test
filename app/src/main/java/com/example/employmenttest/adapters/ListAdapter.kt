@@ -13,11 +13,11 @@ import kotlin.collections.ArrayList
 
 class ListAdapter(
     private val context: Context,
-    private val channelModel: List<ChannelModel>
+    channelModel: MutableList<ChannelModel>
 ) : BaseAdapter(), Filterable {
 
-    private var originalArray = channelModel as ArrayList
-    private var filteredArray = channelModel as ArrayList
+    private var originalArray = channelModel
+    private var filteredArray = channelModel
 
     override fun getCount(): Int {
         return filteredArray.size
@@ -73,7 +73,7 @@ class ListAdapter(
 
             override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
                 Log.i("TAG", constraint.toString())
-                filteredArray = results!!.values as ArrayList<ChannelModel>
+                filteredArray = results!!.values as MutableList<ChannelModel>
                 notifyDataSetChanged()
             }
         }

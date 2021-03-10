@@ -7,7 +7,7 @@ import androidx.room.*
 interface ChannelDao {
 
     @Query("SELECT * FROM channel")
-    suspend fun getAll(): List<ChannelModel>
+    suspend fun getAll(): MutableList<ChannelModel>
 
     @Query("SELECT * FROM channel WHERE name = :name ")
     suspend fun get(name: String): ChannelModel

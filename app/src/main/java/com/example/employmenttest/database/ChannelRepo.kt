@@ -13,7 +13,7 @@ class ChannelRepo(context: Context) {
         channelDao = database.channelDao()
     }
 
-    suspend fun getAll(): List<ChannelModel> {
+    suspend fun getAll(): MutableList<ChannelModel> {
         return channelDao.getAll()
     }
 
