@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/createChannelFragment">
+
+
+    <fragment
+        android:id="@+id/createChannelFragment"
+        android:name="com.example.employmenttest.view.fragments.CreateChannelFragment"
+        android:label="Create Channel"
+        tools:layout="@layout/fragment_create_channel">
+        <action
+            android:id="@+id/action_createChannelFragment_to_addRelatedToFragment"
+            app:destination="@id/addRelatedToFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRelatedToFragment"
+        android:name="com.example.employmenttest.view.fragments.AddRelatedToFragment"
+        tools:layout="@layout/fragment_add_related_to">
+        <action
+            android:id="@+id/action_addRelatedToFragment_to_createYourOwnFragment"
+            app:destination="@id/createYourOwnFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/createYourOwnFragment"
+        android:name="com.example.employmenttest.view.dialog.CreateYourOwnDialog"
+        tools:layout="@layout/dialog_create_your_own" />
+
+</navigation>

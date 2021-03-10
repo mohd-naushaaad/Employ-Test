@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Employment Test</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_channel">About Channel</string>
+    <string name="title">Title (*)</string>
+    <string name="markou_pharmacists">Markou Pharmacists</string>
+    <string name="category">Category (*)</string>
+    <string name="sales_leads">Sales Leads</string>
+    <string name="related_to">Related to</string>
+    <string name="create">Create</string>
+    <string name="attach">Attach</string>
+    <string name="image">Image</string>
+    <string name="camera">Camera</string>
+    <string name="mic">Mic</string>
+    <string name="location">Location</string>
+    <string name="more">More</string>
+    <string name="abc">abc</string>
+    <string name="create_your_own">Create Your Own</string>
+    <string name="price_list">Price List</string>
+    <string name="connect_it_to_the_channel">Connect it to the Channel</string>
+    <string name="to_what_does_the_channel_relate">To what does the Channel Relate?</string>
+    <string name="search_criteria">Search Criteria</string>
+    <string name="markou">Markou</string>
+    <string name="type_of_criteria">Type of Criteria</string>
+    <string name="prospective_customers">Prospective Customers</string>
+    <string name="search">search</string>
+    <string name="search_result">Search Result</string>
+    <string name="connect_the_selection_s_to_the_channel">Connect the selection(s) to the Channel</string>
+    <string name="add_more">+@</string>
+    <string name="participants">Participants</string>
+    <string name="salespeople">Salespeople</string>
+    <string name="eye">Eye</string>
+    <string name="marketing">Marketing</string>
+    <string name="communications">Communications</string>
+    <string name="george">George \n Action Required \n 16/11/2019 10:25</string>
+    <string name="new_potential_customer">New Potential Customer</string>
+    <string name="general"><u>General</u></string>
+    <string name="smile">Smile</string>
+</resources>
